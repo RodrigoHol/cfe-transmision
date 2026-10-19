@@ -1,0 +1,12 @@
+:root {
+  --color-green: #0a9f35;
+  --color-green-dark: #087b35;
+  --color-yellow: #e6c63c;
+  --color-gold: #aa8127;
+  --color-text: #171717;
+  --color-muted: #5c5c5c;
+  --color-white: #fff;
+  --font-family-base: Arial, sans-serif;
+  --content-max-width: 1440px;
+  --shadow-soft: 0 3px 12px rgb(0 0 0 / 12%);
+}
