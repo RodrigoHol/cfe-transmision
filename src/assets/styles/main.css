@@ -7,6 +7,10 @@ body {
   font-family: var(--font-family-base);
 }
 
+main {
+  width: 100%;
+}
+
 .site-header {
   position: sticky;
   top: 0;
@@ -45,7 +49,7 @@ body {
 .page-layout {
   display: grid;
   grid-template-columns: 300px minmax(0, 1fr);
-  max-width: var(--content-max-width);
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -118,7 +122,16 @@ body {
 }
 
 .hero-image {
-  min-height: 330px;
+  height: clamp(260px, 32vw, 420px);
+  overflow: hidden;
+}
+
+.hero-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .image-placeholder {
@@ -187,11 +200,15 @@ body {
 }
 
 .safety-card {
-  border: 1px solid var(--color-text);
+  width: 100%;
 }
 
 .safety-image {
-  min-height: 150px;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
 }
 
 .safety-card h3 {
@@ -232,6 +249,10 @@ body {
 }
 
 @media (max-width: 650px) {
+  .hero-image {
+    height: 240px;
+  }
+
   .content-grid {
     display: block;
     padding: 1.25rem;
