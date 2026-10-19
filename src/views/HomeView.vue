@@ -22,3 +22,56 @@ import SafetyCards from '@/components/home/SafetyCards.vue'
     </div>
   </div>
 </template>
+
+<style scoped>
+.page-layout {
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sidebar-column {
+  background: #fafafa;
+}
+
+.institutional-logo {
+  display: block;
+  padding: 1rem;
+  background: var(--color-white);
+}
+
+.institutional-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.page-content {
+  min-width: 0;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(270px, 0.8fr);
+  gap: 2rem;
+  padding: 2.25rem;
+}
+
+@media (max-width: 900px) {
+  .page-layout {
+    display: block;
+  }
+
+  .sidebar-column {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .content-grid {
+    display: block;
+    padding: 1.25rem;
+  }
+}
+</style>

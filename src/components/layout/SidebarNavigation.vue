@@ -11,3 +11,33 @@ import { sidebarItems } from '@/data/navigation'
     </ul>
   </aside>
 </template>
+
+<style scoped>
+.sidebar {
+  padding: 1.25rem 1.5rem;
+}
+
+.sidebar ul {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar a {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+.sidebar a::before {
+  content: '› ';
+  color: var(--color-gold);
+}
+</style>

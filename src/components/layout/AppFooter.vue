@@ -8,3 +8,21 @@
     </div>
   </footer>
 </template>
+
+<style scoped>
+.site-footer {
+  display: flex;
+  justify-content: center;
+  gap: 0.55rem;
+  padding: 0.7rem 1rem;
+  background: var(--color-green);
+  color: #000;
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  .site-footer {
+    font-size: 0.8rem;
+  }
+}
+</style>
