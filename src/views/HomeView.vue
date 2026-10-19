@@ -3,13 +3,14 @@ import SidebarNavigation from '@/components/layout/SidebarNavigation.vue'
 import HeroSection from '@/components/home/HeroSection.vue'
 import InterestLinks from '@/components/home/InterestLinks.vue'
 import SafetyCards from '@/components/home/SafetyCards.vue'
+import { assetPath } from '@/utils/asset-path'
 </script>
 
 <template>
   <div class="page-layout">
     <div class="sidebar-column">
       <a class="institutional-logo" href="#inicio" aria-label="Gobierno de México y Comisión Federal de Electricidad">
-        <img src="/assets/logos/gobierno.png" alt="Gobierno de México y CFE" />
+        <img :src="assetPath('assets/logos/gobierno.png')" alt="Gobierno de México y CFE" />
       </a>
       <SidebarNavigation />
     </div>

@@ -1,10 +1,12 @@
+import { assetPath } from '@/utils/asset-path'
+
 export const safetyCards = [
   {
-    image: '/assets/images/seguridad-01.png',
+    image: assetPath('assets/images/seguridad-01.png'),
     alt: 'Recomendaciones de seguridad antes de iniciar actividades',
   },
   {
-    image: '/assets/images/seguridad-02.png',
+    image: assetPath('assets/images/seguridad-02.png'),
     alt: 'Recomendaciones para trabajar con seguridad',
   },
 ]

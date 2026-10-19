@@ -1,3 +1,7 @@
+<script setup>
+import { assetPath } from '@/utils/asset-path'
+</script>
+
 <template>
   <section id="inicio" class="hero-section">
     <div class="hero-heading">
@@ -5,7 +9,7 @@
       <p>Zona de Operación de Transmisión Puebla Tlaxcala</p>
     </div>
     <div class="hero-image">
-      <img src="/assets/images/centro-control.png" alt="Centro de control de transmisión" />
+      <img :src="assetPath('assets/images/centro-control.png')" alt="Centro de control de transmisión" />
     </div>
     <p class="image-caption">
       Centro de control, Zona de Operación de Transmisión Puebla-Tlaxcala, 2026
